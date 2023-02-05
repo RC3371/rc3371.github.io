@@ -97,6 +97,7 @@
 				$('#nav-registration').removeClass('active');
 				$('#nav-sponsors').removeClass('active');
 				$('#nav-history').removeClass('active');
+				$('#nav-webcast').removeClass('active');
 			}
 
 			if(isScrolledIntoView(".registration-text")) {
@@ -104,6 +105,7 @@
 				$('#nav-registration').addClass('active');
 				$('#nav-sponsors').removeClass('active');
 				$('#nav-history').removeClass('active');
+				$('#nav-webcast').removeClass('active');
 			}
 
 			if(isScrolledIntoView(".sponsors-text")) {
@@ -111,6 +113,7 @@
 				$('#nav-registration').removeClass('active');
 				$('#nav-sponsors').addClass('active');
 				$('#nav-history').removeClass('active');
+				$('#nav-webcast').removeClass('active');
 			}
 
 			if(isScrolledIntoView(".history-text")) {
@@ -118,6 +121,15 @@
 				$('#nav-registration').removeClass('active');
 				$('#nav-sponsors').removeClass('active');
 				$('#nav-history').addClass('active');
+				$('#nav-webcast').removeClass('active');
+			}
+
+			if(isScrolledIntoView(".webcast-text")) {
+				$$('#nav-event').removeClass('active');
+				$('#nav-registration').removeClass('active');
+				$('#nav-sponsors').removeClass('active');
+				$('#nav-history').removeClass('active');
+				$('#nav-webcast').addClass('active');
 			}
 
 			if(window.mobileAndTabletcheck) {
@@ -167,6 +179,7 @@
 		        <!-- <li id="nav-sponsors"><a href="#sponsors">SPONSORS</a></li> -->
 		        <li id="nav-history"><a href="history.html">HISTORY</a></li>
 		        <li id="nav-webcast"><a href="webcast.html">WEBCAST</a></li>
+				<li id="nav-sponsors"><a href="sponsors.html">SPONSORS</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
@@ -223,30 +236,30 @@
 				</div>
 		</div> -->
 
-		<div class="placeholder" id="info"></div>
-		<div style="background-color:#202033" class="map">
-			<a href="https://media.team254.com/2022/09/908907bb-CampusMap2022-v3.pdf" target=_blank><img src="https://media.team254.com/2022/09/977507cb-CampusMap2022-v3.png"></a>
-			
-			<div class="map-blurb">
-				<div class="map-header">MAP</div>
+		<div class="event-map" id="info">
+			<div style="background-color:#202033" class="map">
+				<a href="https://media.team254.com/2022/09/908907bb-CampusMap2022-v3.pdf" target=_blank><img src="https://media.team254.com/2022/09/977507cb-CampusMap2022-v3.png"></a>
+				
+				<div class="map-blurb">
+					<div class="map-header">MAP</div>
 
-				<p class="link-text">The event is located at <em><a href='https://www.google.com/maps/place/960+W+Hedding+St,+San+Jose,+CA+95126' target=_blank>960 W. Hedding St. San Jose</a></em></p>
-				<div class="link-text"><em>Note that for 2022, the Stockton St. entrance and parking lot is closed for construction.</em></div>
+					<p class="link-text">The event is located at <em><a href='https://www.google.com/maps/place/960+W+Hedding+St,+San+Jose,+CA+95126' target=_blank>960 W. Hedding St. San Jose</a></em></p>
+					<div class="link-text"><em>Note that for 2022, the Stockton St. entrance and parking lot is closed for construction.</em></div>
 
-<!-- 			<p class="map-text">Chezy Champs has two parking areas which are not directly connected to each other:</p>
-				<div class="link-header black">Pit Parking</div>
-				<div class="link-text black">Limited pit parking is available at <em><a href='https://www.google.com/maps/place/960+W+Hedding+St,+San+Jose,+CA+95126' target=_blank>960 W. Hedding St. San Jose</a></em></div>
-				<div class="link-header black">Arena Parking</div>
-				<div class="link-text black">Take Stockton Ave to <em><a href='https://www.google.com/maps/place/799+Emory+St,+San+Jose,+CA+95110' target=_blank>799 Emory St. San Jose</a></em></div> -->
+	<!-- 			<p class="map-text">Chezy Champs has two parking areas which are not directly connected to each other:</p>
+					<div class="link-header black">Pit Parking</div>
+					<div class="link-text black">Limited pit parking is available at <em><a href='https://www.google.com/maps/place/960+W+Hedding+St,+San+Jose,+CA+95126' target=_blank>960 W. Hedding St. San Jose</a></em></div>
+					<div class="link-header black">Arena Parking</div>
+					<div class="link-text black">Take Stockton Ave to <em><a href='https://www.google.com/maps/place/799+Emory+St,+San+Jose,+CA+95110' target=_blank>799 Emory St. San Jose</a></em></div> -->
 
-				<div class="link-header">Trailer Parking</div>
-				<div class="link-text"><a href='https://media.team254.com/2022/08/8ccf0798-CampusMap2022-trailer-v1.pdf' target=_blank>Trailer parking</a> (at your own risk) is available in the main 960 W. Hedding lot. We take no responsibility for trailers parked at Chezy Champs.</div>
+					<div class="link-header">Trailer Parking</div>
+					<div class="link-text"><a href='https://media.team254.com/2022/08/8ccf0798-CampusMap2022-trailer-v1.pdf' target=_blank>Trailer parking</a> (at your own risk) is available in the main 960 W. Hedding lot. We take no responsibility for trailers parked at Chezy Champs.</div>
 
-				<div class="link-header">Parking Map</div>
-				<div class="link-text">For 2022, we have several <a href='https://media.team254.com/2022/09/97d407dc-ChezyParking-v1.pdf' target=_blank>additional parking lots</a> available.</div>
-				<!-- <a href="https://media.team254.com/2022/09/97d407dc-ChezyParking-v1.pdf" target=_blank><img src="https://media.team254.com/2022/09/902e07b4-ChezyParking-v1.png"></a> -->
+					<div class="link-header">Parking Map</div>
+					<div class="link-text">For 2022, we have several <a href='https://media.team254.com/2022/09/97d407dc-ChezyParking-v1.pdf' target=_blank>additional parking lots</a> available.</div>
+					<!-- <a href="https://media.team254.com/2022/09/97d407dc-ChezyParking-v1.pdf" target=_blank><img src="https://media.team254.com/2022/09/902e07b4-ChezyParking-v1.png"></a> -->
 
-				<!-- <p class="map-text">For 2021, all participants must check-in, provide proof of COVID-19 vaccination, and receive an event wristband at the outdoor check-in desk (marked as "C" on the map at left) before being permitted into the event.</p> -->
+					<!-- <p class="map-text">For 2021, all participants must check-in, provide proof of COVID-19 vaccination, and receive an event wristband at the outdoor check-in desk (marked as "C" on the map at left) before being permitted into the event.</p> -->
 			</div>
 		</div>
 
@@ -261,7 +274,7 @@
 				<div class="rule-changes">
 					<p style="display:block"><b>Chezy Champs will be played under the RAPID REACT rules with modifications as specified <a href="https://media.team254.com/2022/09/95bd07c9-CC22-RuleChanges-v2.pdf" target=_blank>here</a>.</b></p>
 					<p style="display:block"><b>Chezy Champs' COVID protocols and rules for 2022 are specified <a href="https://media.team254.com/2022/08/940f07bb-CC22-COVIDProtocols-v1.pdf" target=_blank>here</a>. All participants are required to comply at all times and may be teams disqualified for noncompliance (see rule changes above).</b></p>
-					<p style="display:block">Previous revisions of rule changes (no longer valid): <a href="https://media.team254.com/2022/08/8e250795-CC22-RuleChanges-v1.pdf" target=_blank>v1</a>.</p>
+					<p style="display:block">Previous revisions of rule changes (no longer valid): <a href="https://media.team254.com/2022/08/8e250795-CC22-RuleChanges-v1.pdf" target=_blank>v1</a></p>
 
 
 
@@ -414,7 +427,7 @@
 		 </div> -->
  
 
-
+		
 		
 
 		<div class="footer">

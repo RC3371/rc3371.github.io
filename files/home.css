@@ -102,13 +102,15 @@
 
 .event-description {
 	width: 100%;
-	height: 410px;
+	/* height: 410px; */
+	position: relative;
+	padding-bottom: 20px;
 	overflow: hidden;
 }
 
 .event-map {
 	width: 100%;
-	height: 610px;
+	position: relative;
 	overflow: hidden;
 }
 
@@ -121,7 +123,7 @@
 .history-front {
 	width: 100%;
 	height: 54.35em;
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 @media (min-width:321px) and (max-width: 770px)
@@ -154,7 +156,64 @@
 .event-registration {
 	width: 100%;
 	height: 125px;
+	position: relative;
+	/* padding-bottom: -5%; */
 	overflow: hidden;
+}
+
+.event-sponsors-header {
+	width: 100%;
+	height: 125px;
+	position: relative;
+	/* padding-bottom: -5%; */
+	overflow: hidden;
+}
+
+.event-sponsors-thanks {
+	position: absolute;
+	margin-bottom: -5em;
+    color: #222;
+    font-size: 18px;
+	font-family: 'Open Sans Light', sans-serif; 
+	font-weight: 300;
+	width: 60%;
+	margin-left: 20%;
+	line-height: 30px;
+	text-align: center;
+}
+
+.event-sponsors-text {
+	position: relative;
+	margin-top: 7em;
+    color: #222;
+    font-size: 18px;
+	font-family: 'Open Sans Light', sans-serif; 
+	font-weight: 300;
+	width: 60%;
+	margin-left: 20%;
+	line-height: 30px;
+	text-align: center;
+}
+
+.sponsor-images-row {
+	display:flex;
+	position:relative;
+    width:100em;
+}
+
+.sponsor-images-row>.column {
+	flex: 33.33%;
+	padding: 5px;
+  }
+
+@media (max-width: 1000px) {
+	.event-registration {
+		width: 100%;
+		/* height: 125px; */
+		position: relative;
+		padding-bottom: 5%;
+		overflow: hidden;
+	}
 }
 
 
@@ -184,6 +243,11 @@
 	display: inline-block;
 	height: 100%;
 	width: 100%;
+}
+
+.sponsor-container {
+	width: 100%;
+	height: 54.35em;
 }
 
 @keyframes backgroundSwap {
@@ -371,18 +435,29 @@
 	text-decoration: none;
 }
 
-.button-container {
-	width: 100%;
+.link-button-container {
+	align-items: left;
 	display: block;
-	margin-top: 2%;
 	text-align: left;
 }
 
-.button-container-2 {
+/* a>.link-container {
+	width: 50%;
+} */
+
+.button-frame {
 	width: 100%;
 	display: block;
-	margin-top: -5%;
 	text-align: left;
+	position: relative;
+}
+
+.button-frame-2 {
+	width: 100%;	
+	display: block;
+	text-align: left;
+	position: relative;
+	margin-top: -5%;
 }
 
 .button {
@@ -505,12 +580,12 @@
 }
 
 .link-container {
-  width: 39.6%;
-  padding: 70px;
-  display: inline-block;
-  position: absolute;
-  right: 5%;
-  padding-bottom: 0px;
+	width: 39.6%;
+	padding: 70px;
+	display: inline-block;
+	position: absolute;
+	right: 5%;
+	padding-bottom: 0px;
 }
 
 .link {
@@ -547,11 +622,21 @@
 }
 
 .map {
-	background-color: #fff;
 	width: 100%;
-	padding: 60px;
-	padding-bottom: 100px;
-	height: 600px;
+	padding: 5%;
+	padding-bottom: 13%;
+	position: relative;
+	/* height: 600px; */
+}
+
+@media (min-width:1100px) {
+	.map {
+		width: 100%;
+		padding: 5%;
+		padding-bottom: 10%;
+		position: relative;
+		/* height: 600px; */
+	}
 }
 
 .map img {

@@ -97,6 +97,7 @@
 				$('#nav-registration').removeClass('active');
 				$('#nav-sponsors').removeClass('active');
 				$('#nav-history').removeClass('active');
+				$('#nav-webcast').removeClass('active');
 			}
 
 			if(isScrolledIntoView(".registration-text")) {
@@ -104,6 +105,7 @@
 				$('#nav-registration').addClass('active');
 				$('#nav-sponsors').removeClass('active');
 				$('#nav-history').removeClass('active');
+				$('#nav-webcast').removeClass('active');
 			}
 
 			if(isScrolledIntoView(".sponsors-text")) {
@@ -111,6 +113,7 @@
 				$('#nav-registration').removeClass('active');
 				$('#nav-sponsors').addClass('active');
 				$('#nav-history').removeClass('active');
+				$('#nav-webcast').removeClass('active');
 			}
 
 			if(isScrolledIntoView(".history-text")) {
@@ -118,6 +121,15 @@
 				$('#nav-registration').removeClass('active');
 				$('#nav-sponsors').removeClass('active');
 				$('#nav-history').addClass('active');
+				$('#nav-webcast').removeClass('active');
+			}
+
+			if(isScrolledIntoView(".webcast-text")) {
+				$$('#nav-event').removeClass('active');
+				$('#nav-registration').removeClass('active');
+				$('#nav-sponsors').removeClass('active');
+				$('#nav-history').removeClass('active');
+				$('#nav-webcast').addClass('active');
 			}
 
 			if(window.mobileAndTabletcheck) {
@@ -168,6 +180,7 @@
 		        <!-- <li id="nav-sponsors"><a href="#sponsors">SPONSORS</a></li> -->
 		        <li id="nav-history"><a href="history.html">HISTORY</a></li>
 		        <li id="nav-webcast"><a href="webcast.html">WEBCAST</a></li>
+				<li id="nav-sponsors"><a href="sponsors.html">SPONSORS</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
@@ -199,24 +212,24 @@
 					<!-- Apply for Chezy Champs using this form.  Selections will be made based on criteria that include competitiveness, locality, and other factors. Applications close on May 27th and invitations will be sent by mid-June -->
 					Applications are now closed. If you are interested in joining the waiting list, fill out the application form.
 					<!-- Coming soon... -->
-					</div>
-					<a href="https://forms.gle/bfPNus6mRokRuBWc6" target=_blank>
-						<div class="button-container">
-							<div class="button-inverted">
-								Application Form &nbsp;
-								<i class="fa fa-chevron-right"></i>
+					</div class="link-button-container">
+						<a href="https://forms.gle/bfPNus6mRokRuBWc6" target=_blank>
+							<div class="button-frame">
+								<div class="button-inverted">
+									Application Form &nbsp;
+									<i class="fa fa-chevron-right"></i>
+								</div>
 							</div>
-						</div>
-					</a>
-				</div>
+						</a>
+					</div>
 				<div class="link" style="border-bottom-style:none">
 					<div class="link-header">Volunteer Signups</div>
 					<div class="link-text">
 						<!-- Coming soon... -->
 						We need many volunteers to make Chezy Champs a success! If you are interested in volunteering, please fill out this form.
-					</div>
+					</div class="link-button-container">
 					<a href="https://docs.google.com/forms/d/e/1FAIpQLSfK5cqgFtgHUNM0V7tgZ8GVs8Bs3a8ndyTSZ1As00BnTtzP_w/viewform" target=_blank>
-						<div class="button-container">
+						<div class="button-frame">
 							<div class="button-inverted">
 								Trained Volunteer Form &nbsp;
 								<i class="fa fa-chevron-right"></i>
@@ -224,7 +237,7 @@
 						</div>
 					</a>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfK5cqgFtgHUNM0V7tgZ8GVs8Bs3a8ndyTSZ1As00BnTtzP_w/viewform" target=_blank>
-						<div class="button-container-2">
+						<div class="button-frame-2">
 							<div class="button-inverted">
 								Regular Volunteer Form &nbsp;
 								<i class="fa fa-chevron-right"></i>

@@ -97,6 +97,7 @@
 				$('#nav-registration').removeClass('active');
 				$('#nav-sponsors').removeClass('active');
 				$('#nav-history').removeClass('active');
+				$('#nav-webcast').removeClass('active');
 			}
 
 			if(isScrolledIntoView(".registration-text")) {
@@ -104,6 +105,7 @@
 				$('#nav-registration').addClass('active');
 				$('#nav-sponsors').removeClass('active');
 				$('#nav-history').removeClass('active');
+				$('#nav-webcast').removeClass('active');
 			}
 
 			if(isScrolledIntoView(".sponsors-text")) {
@@ -111,6 +113,7 @@
 				$('#nav-registration').removeClass('active');
 				$('#nav-sponsors').addClass('active');
 				$('#nav-history').removeClass('active');
+				$('#nav-webcast').removeClass('active');
 			}
 
 			if(isScrolledIntoView(".history-text")) {
@@ -118,6 +121,15 @@
 				$('#nav-registration').removeClass('active');
 				$('#nav-sponsors').removeClass('active');
 				$('#nav-history').addClass('active');
+				$('#nav-webcast').removeClass('active');
+			}
+
+			if(isScrolledIntoView(".webcast-text")) {
+				$$('#nav-event').removeClass('active');
+				$('#nav-registration').removeClass('active');
+				$('#nav-sponsors').removeClass('active');
+				$('#nav-history').removeClass('active');
+				$('#nav-webcast').addClass('active');
 			}
 
 			if(window.mobileAndTabletcheck) {
@@ -192,6 +204,7 @@
 		        <!-- <li id="nav-sponsors"><a href="#sponsors">SPONSORS</a></li> -->
 		        <li id="nav-history"><a href="history.html">HISTORY</a></li>
 		        <li id="nav-webcast"><a href="webcast.html">WEBCAST</a></li>
+				<li id="nav-sponsors"><a href="sponsors.html">SPONSORS</a></li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
@@ -205,7 +218,7 @@
   			<img id="image_5" src="carousel1.jpg"  height="500px" width="500px">
 		</div> -->
 
-        <div class="event-history" id="event">
+    <div class="event-history" id="event">
 		<div class="history-front">
 			<div class="history-img"></div>
 			<div class="history-caption">
@@ -214,6 +227,34 @@
 			<div style="color:#f8f8f8" class="history-text">HISTORY</div>
 		</div>
 	</div>
+
+	<div class="event-sponsors" id="sponsors">
+		<div class="sponsor-img-container">
+			<div class="sponsor-img"></div>
+		</div>				
+		
+		<div class="sponsor-header">SPONSORS</div>
+		<div class="spr-text" style="display:inline-block!important"><i style="color: 5a5a5a;">
+		
+		Interested in sponsoring Chezy Champs? Contact us at <script>document.write('<'+'a'+' '+'h'+'r'+'e'+'f'+'='+"'"+'m'+'a'+'&'+'#'+'1'+'0'+'5'+';'+'l'+'t'+'o'+'&'+'#'+'5'+'8'+';'+'&'+'#'+'9'+'9'+';'+'h'+'e'+'z'+'%'+'7'+'9'+'c'+'h'+'%'+'6'+'1'+'m'+'p'+'s'+'&'+'#'+'6'+'4'+';'+'t'+'%'+'6'+'5'+'&'+'#'+'9'+'7'+';'+'m'+'&'+'#'+'5'+'0'+';'+'%'+'3'+'5'+'&'+'#'+'5'+'2'+';'+'%'+'2'+'&'+'#'+'6'+'9'+';'+'%'+'6'+'3'+'o'+'%'+'&'+'#'+'5'+'4'+';'+'D'+"'"+'>'+'c'+'&'+'#'+'1'+'0'+'4'+';'+'e'+'z'+'y'+'&'+'#'+'9'+'9'+';'+'h'+'a'+'m'+'p'+'s'+'&'+'#'+'6'+'4'+';'+'t'+'&'+'#'+'1'+'0'+'1'+';'+'&'+'#'+'9'+'7'+';'+'m'+'&'+'#'+'5'+'0'+';'+'&'+'#'+'5'+'3'+';'+'4'+'&'+'#'+'4'+'6'+';'+'&'+'#'+'9'+'9'+';'+'o'+'m'+'<'+'/'+'a'+'>');</script><noscript>[Turn on JavaScript to see the email address]</noscript></i></div>
+		
+		</div>
+
+	<div class="filler"></div>
+
+	<div class="footer">
+
+		<div class="footer-links" style="margin: auto;">
+			<a href="https://www.facebook.com/team254robotics" class="footer-link-a" target="_blank"><span class="footer-link">FACEBOOK</span></a>
+			<a href="https://www.thebluealliance.com/event/2022cc" class="footer-link-a" target="_blank"><span class="footer-link">TBA</span></a>
+			<!-- <a href="https://www.twitch.tv/robosportsnetwork" class="footer-link-a" target="_blank"><span class="footer-link">TWITCH</span></a> -->
+			<a href="https://www.youtube.com/channel/UCKqzB6PVkWvtrGUWl0nv4gQ" class="footer-link-a" target="_blank"><span class="footer-link">YOUTUBE</span></a>
+			<a href="https://www.chiefdelphi.com/t/chezy-champs-2022-save-the-date" class="footer-link-a" target="_blank"><span class="footer-link">CD</span></a>
+			<a href="http://www.team254.com" class="footer-link-a" target="_blank"><span class="footer-link">TEAM 254</span></a>
+		</div>
+
+	
+		
 	</div>
 
 </body>
