@@ -1,0 +1,51 @@
+.sponsor-container {
+	width: 100%;
+	height: 54.35em;
+}
+
+.event-sponsors-header {
+	width: 100%;
+	height: 125px;
+	position: relative;
+	/* padding-bottom: -5%; */
+	overflow: hidden;
+}
+
+
+.event-sponsors-thanks {
+	position: absolute;
+	margin-bottom: -5em;
+    color: #222;
+    font-size: 18px;
+	font-family: 'Open Sans Light', sans-serif; 
+	font-weight: 300;
+	width: 60%;
+	margin-left: 20%;
+	line-height: 30px;
+	text-align: center;
+}
+
+.sponsor-images-row {
+	display:flex;
+	position:relative;
+	margin-top: 5em;
+    margin-left: 5%;
+    max-width: 100%;
+}
+
+.sponsor-images-row>.column {
+	flex: 50%;
+	padding: 5px;
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+.header {  
+    font-size: 55px;
+    width: 100%;
+    text-align: center;
+	font-family: 'Open Sans Light', sans-serif; 
+	color: #5a5a5a;
+	font-weight: 300;
+	/*padding-bottom: 30px;*/
+}
